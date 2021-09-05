@@ -16,18 +16,18 @@
 <body>
 
   <div id="rightSide"> <!-- Side to be displayed on the right-->
-    <div> <!-- Division for the Bill input -->
-      Bill
-    </div>
-    <div>
-      <form>
+    
+    <form><!--Form for the bill-->
+      <fieldset>
+        <legend>Bill</legend>
         <input id="billAmount" type="text" id="billAmount" name="billAmount">
-      </form>
-    </div>
+      </fieldset>
+    </form>
+  
 
-    <div> <!-- Division to enter the tip amount -->
-      Select Tip %
-        <div>
+    <form><!--Form for the tip-->
+      <fieldset>
+        <legend>Select Tip %</legend>
           <input type="button" value="5%">
           <input type="button" value="10%">
           <input type="button" value="15%">
@@ -36,13 +36,19 @@
           <form>
             Custom <input  type="text" id="customTip" name="customTip">
           </form>
-        </div>
-    </div>
-
-    Number of People Can't be Zero
-    <form>
-      <input id-"numberOfPeople" type"text" id="numberOfPeople" name="numberOfPeople">
+        </fieldset>
     </form>
+
+    <form> <!--Form for the number of people-->
+      <fieldset>
+        <legend>Number of People</legend>
+        <legend>Can't be Zero</legend>
+          <form>
+            <input id-"numberOfPeople" type"text" id="numberOfPeople" name="numberOfPeople">
+          </form>
+      </fieldset>
+    </form>
+  
   </div>
 
   <div id="leftSide"> <!--Side to be displayed on the left-->
