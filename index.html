@@ -15,42 +15,46 @@
 </head>
 <body>
 
-  <div> <!-- Division for the Bill input -->
-    Bill
-  </div>
-  <div>
+  <div id="rightSide"> <!-- Side to be displayed on the right-->
+    <div> <!-- Division for the Bill input -->
+      Bill
+    </div>
+    <div>
+      <form>
+        <input id="billAmount" type="text" id="billAmount" name="billAmount">
+      </form>
+    </div>
+
+    <div> <!-- Division to enter the tip amount -->
+      Select Tip %
+        <div>
+          <input type="button" value="5%">
+          <input type="button" value="10%">
+          <input type="button" value="15%">
+          <input type="button" value="25%">
+          <input type="button" value="50%">
+          <form>
+            Custom <input  type="text" id="customTip" name="customTip">
+          </form>
+        </div>
+    </div>
+
+    Number of People Can't be Zero
     <form>
-      <input type="text" id="billAmount" name="billAmount">
+      <input id-"numberOfPeople" type"text" id="numberOfPeople" name="numberOfPeople">
     </form>
   </div>
 
-  <div> <!-- Division to enter the tip amount -->
-    Select Tip %
-      <div>
-        <input type="button" value="5%">
-        <input type="button" value="10%">
-        <input type="button" value="15%">
-        <input type="button" value="25%">
-        <input type="button" value="50%">
-        <form>
-          Custom <input type="text" id="customTip" name="customTip">
-        </form>
-      </div>
-  </div>
+  <div id="leftSide"> <!--Side to be displayed on the left-->
+    Tip Amount
+    / person
 
-  Number of People Can't be Zero
-  <form>
-    <input type"text" id="numberOfPeople" name="numberOfPeople">
-  </form>
+    Total
+    / person
 
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  <div> <!-- Division for the reset button -->
-    <input type="button" value="Reset">
+    <div> <!-- Division for the reset button -->
+      <input type="button" value="Reset">
+    </div>
   </div>
   
   <div class="attribution">
