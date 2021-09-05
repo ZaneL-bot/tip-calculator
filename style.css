@@ -8,11 +8,13 @@ body{
 #billAmount{ 
     background: url(images/icon-dollar.svg) no-repeat scroll;
     padding-left: 30px;
+    background-color: white;
 }
 
 #numberOfPeople{
     background: url(images/icon-person.svg) no-repeat scroll;
     padding-left: 30px;
+    background-color: white;
 }
 
 #rightSide{
