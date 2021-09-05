@@ -14,3 +14,21 @@ body{
     background: url(images/icon-person.svg) no-repeat scroll;
     padding-left: 30px;
 }
+
+#rightSide{
+  float:left; 
+  margin-right:100px;
+  width:140px;
+  border: white;
+}
+
+#leftSide{
+  overflow:hidden;
+  margin: 20px;
+  min-height:170px;
+  border: purple;
+}
+
+fieldset{
+    border: none;
+}
