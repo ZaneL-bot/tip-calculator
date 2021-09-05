@@ -4,3 +4,13 @@ body{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+#billAmount{ 
+    background: url(images/icon-dollar.svg) no-repeat scroll;
+    padding-left: 30px;
+}
+
+#numberOfPeople{
+    background: url(images/icon-person.svg) no-repeat scroll;
+    padding-left: 30px;
+}
