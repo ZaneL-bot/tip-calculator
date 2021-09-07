@@ -1,19 +1,25 @@
-let totalExcludingTax = 0;
-let tipPercentage = 0;
+$(function()
+ {
+    $(".input").on("change keyup",calculateTotal)
+})
 
 function tipPercent(percentAmount)
 {
-    tipPercentage = percentAmount;
+    let tipPercentage = percentAmount;
+
+    return tipPercentage;
 }
 
 function calculateTotalExcludingTax()
 {
-    totalExcludingTax = ($("#billAmount").val() / $("#numberOfPersons").val());
+    let totalExcludingTax = ($("#billAmount").val() / $("#numberOfPersons").val());
+
+    return totalExcludingTax;
 }
 
-function tipPerPersonCalculation()
+function calculateTotal()
 {
-    let tipPerPerson = (totalExcludingTax * tipPercentage);
+    let tipPerPerson = (tipPercent() * calculateTotalExcludingTax());
+
     alert(tipPerPerson);
-    //$("#tipPerPerson").text(tipPerPerson);
 }
