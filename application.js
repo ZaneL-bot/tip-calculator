@@ -19,7 +19,8 @@ function calculateTotalExcludingTax()
 
 function calculateTotal()
 {
-    let tipPerPerson = (tipPercent() * calculateTotalExcludingTax());
-
-    alert(tipPerPerson);
+    let tipPerPersons = (tipPercent() * calculateTotalExcludingTax());
+    $("#tipPerPerson").text(tipPerPersons);
+    let totalPerPerson = (tipPerPersons + calculateTotalExcludingTax());
+    $("totalPerPerson").text(totalPerPerson);
 }
