@@ -17,20 +17,20 @@ body{
     background-color: white;
 }
 
-#rightSide{
+#rightSide{ /* Places information to be entered onto the left */
   float:left; 
   margin-right:100px;
   width:140px;
   border: white;
 }
 
-#leftSide{
+#leftSide{ /* Places information to be entered onto the left */
   overflow:hidden;
   margin: 20px;
   min-height:170px;
   border: purple;
 }
 
-fieldset{
+fieldset{ /*Removes border from all fieldsets */
     border: none;
 }
