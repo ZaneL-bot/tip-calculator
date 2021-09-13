@@ -1,7 +1,7 @@
-$(function() //Function will calculate as the HTML classes input are updated
- {
-    $(".input").on("change keyup",calculateTotal)
-})
+// $(function() //Function will calculate as the HTML classes input are updated
+//  {
+//     $(".input").on("change keyup",calculateTotal)
+// })
 
 function tipPercent(percentAmount) //When radio button is pressed it will store the value of percentage chosen and return once called
 {
