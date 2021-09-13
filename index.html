@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="style.css">
 
   <script src="application.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(function() //Function will calculate as the HTML classes input are updated
+      {
+        $(".input").on("change keyup",calculateTotal)
+      })
+  </script>
 
 </head>
 <body>
@@ -28,11 +35,11 @@
     <form><!--Form for the tip-->
       <fieldset>
         <legend>Select Tip %</legend>
-          <input type="button" value="5%" onclick=tipPercent(0.05)>
-          <input type="button" value="10%" onclick=tipPercent(0.1)>
-          <input type="button" value="15%" onclick=tipPercent(0.15)>
-          <input type="button" value="25%" onclick=tipPercent(0.25)>
-          <input type="button" value="50%" onclick=tipPercent(0.5)>
+          <input type="button" value="5%" onclick=tipPercent(0.05)></input>
+          <input type="button" value="10%" onclick=tipPercent(0.1)></input>
+          <input type="button" value="15%" onclick=tipPercent(0.15)></input>
+          <input type="button" value="25%" onclick=tipPercent(0.25)></input>
+          <input type="button" value="50%" onclick=tipPercent(0.5)></input>
           <form>
             Custom <input type="number" id="customTip"> <!--Place custom tip amount-->
           </form>
