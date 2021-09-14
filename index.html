@@ -10,19 +10,6 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <script src="application.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!--Declaring use of jQuery library-->
-  <script>
-    // $(document).ready(function() //Function will import the application.js file
-    // {
-    //   $.getScript('application.js')
-    // })
-    
-    $(function() //Function will calculate as the HTML classes input are updated
-    {
-        $(".input").on("change keyup",calculateTotal)
-    })
-  </script>
 
 </head>
 <body>
@@ -40,11 +27,12 @@
     <form><!--Form for the tip-->
       <fieldset>
         <legend>Select Tip %</legend>
-          <input type="button" value="5%" onclick=tipPercent(0.05)></input>
-          <input type="button" value="10%" onclick=tipPercent(0.1)></input>
-          <input type="button" value="15%" onclick=tipPercent(0.15)></input>
-          <input type="button" value="25%" onclick=tipPercent(0.25)></input>
-          <input type="button" value="50%" onclick=tipPercent(0.5)></input>
+          <input type="button" value="0.05" class="percentButton"></input>
+          <input type="button" value="0.1" class="percentButton"></input>
+          <input type="button" value="0.15" class="percentButton"></input>
+          <input type="button" value="0.25" class="percentButton"></input>
+          <input type="button" value="0.50" class="percentButton"></input>
+          <input type="hidden" id="hiddenPercentage"></input>
           <form>
             Custom <input type="number" id="customTip"> <!--Place custom tip amount-->
           </form>
@@ -87,5 +75,16 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!--Declaring use of jQuery library-->
+  <script src="application.js"></script>
+  <script>
+    
+    $(function() //Function will calculate as the HTML classes input are updated
+    {  
+      $(".input").on("change keyup",calculateTotal)
+      $(".percentButton").on("click", tipPercent)
+    })
+  </script>
 </body>
 </html>
